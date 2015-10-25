@@ -1,0 +1,3 @@
+[submodule "trewbrews-calc"]
+	path = trewbrews-calc
+	url = git@github.com:sbnedkov/trewbrews-calc.git
