@@ -1,2 +1,2 @@
 # stovetop
-A homebrew website.
+A homebrewer's website.
