@@ -25,42 +25,15 @@
           <div class="batch-container">
             <span class="calculator-text">Let's make a </span>
             <input class="form-control bc-input-small" ng-model="size" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="size"/>
-            <span class="calculator-text"> litres batch of </span>
+            <span class="calculator-text"> litres batch (
+            <input class="form-control bc-input-small" ng-model="boilsize" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="boilsize"/>
+            <span class="calculator-text"> litres boil)
+            <span class="calculator-text"> of </span>
             <select class="form-control bc-input" ng-model="style" name="style">
               {{#each styles}}
                 <option value="{{data}}">{{name}}</option>
               {{/each}}
             </select>
-          <!--
-              <div class="form-group">
-                  <label>Style</label>
-                  <select class="form-control" ng-model="style" name="style">
-                    {{#each styles}}
-                      <option value="{{data}}">{{name}}</option>
-                    {{/each}}
-                  </select>
-              </div>
-
-              <div class="form-group">
-                  <label>Boil size (liters)</label>
-                  <input class="form-control" ng-model="boilsize" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="boilsize"/>
-              </div>
-
-              <div class="form-group">
-                  <label>Batch size (liters)</label>
-                  <input class="form-control" ng-model="size" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="size"/>
-              </div>
-
-              <div class="form-group">
-                  <label>Boil time (minutes)</label>
-                  <input class="form-control" ng-model="time" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="time"/>
-              </div>
-
-              <div class="form-group">
-                  <label>Brewhouse efficiency (%)</label>
-                  <input class="form-control" ng-model="efficiency" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="efficiency"/>
-              </div>
-          -->
           </div>
           <div class="calculator-container">
             <div class="calculator">

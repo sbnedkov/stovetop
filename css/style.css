@@ -87,9 +87,9 @@ body {
 .batch-container {
     position: absolute;
     top: 220px;
-    width: 30%;
+    width: 40%;
     height: 45px;
-    margin: 0 35%;
+    margin: 0 30%;
     padding: 5px 0 0 0;
     overflow: auto;
     border: 1px solid #2B1502;
@@ -128,6 +128,7 @@ body {
     width: 180px;
     font-size: 12px;
     line-height: 12px;
+    font-family: arial;
 }
 
 .bc-input-small {
@@ -135,6 +136,7 @@ body {
     width: 50px;
     font-size: 12px;
     line-height: 12px;
+    font-family: arial;
 }
 
 .bc-input-smallest {
@@ -142,6 +144,7 @@ body {
     width: 20px;
     font-size: 12px;
     line-height: 12px;
+    font-family: arial;
 }
 
 .delete-button {
