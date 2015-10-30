@@ -3,10 +3,16 @@ body {
     font-family: arial;
 }
 
-.title-container {
+.main {
     position: absolute;
+    top: 52px;
     width: 100%;
-    top: 20px;
+    background: #222 url('../img/longimage.png') no-repeat local center center;
+    z-index: 100;
+}
+
+.title-container {
+    width: 100%;
 }
 
 .text-header {
@@ -18,13 +24,22 @@ body {
     margin: 0 auto;
     font-family: lobster;
     font-size: 28px;
+    line-height: 90%;
     color: #FFF;
 }
 
 .brewshop-header span {
     margin: 0 auto;
     font-family: impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
-    font-size: 66px;
+    font-size: 50px;
+    line-height: 90%;
+    color: #FFF;
+}
+
+.stovetop-header span {
+    margin: 0 auto;
+    font-family: impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
+    font-size: 30px;
     color: #FFF;
 }
 
@@ -32,7 +47,7 @@ body {
     margin: 0 auto;
     font-family: lobster;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 18px;
     color: #FFF;
 }
 
@@ -62,19 +77,37 @@ body {
     z-index: 1000;
 }
 
-.main {
-    position: fixed;
-    top: 52px;
-    bottom: 52px;
+.store-container {
     width: 100%;
-    background: #222 url('../img/malt.jpg') no-repeat fixed center center;
-    z-index: 100;
+    overflow: auto;
+}
+
+.shop-container {
+    height: 180px;
+    margin: 0;
+}
+
+.videos-container {
+    width: 100%;
+    overflow: auto;
+}
+
+.video-container {
+    height: 100px;
+    margin: 0;
+}
+
+.recipes-container {
+    width: 100%;
+    overflow: auto;
+}
+
+.recipe-container {
+    height: 180px;
+    margin: 0;
 }
 
 .calculator-container {
-    position: absolute;
-    top: 280px;
-    bottom: 20px;
     width: 100%;
     overflow: auto;
 }
@@ -85,8 +118,6 @@ body {
 }
 
 .batch-container {
-    position: absolute;
-    top: 220px;
     width: 40%;
     height: 45px;
     margin: 0 30%;
@@ -181,4 +212,8 @@ body {
 
 .cross {
     color: red;
+}
+
+.bottom-spacer {
+    height: 100px;
 }

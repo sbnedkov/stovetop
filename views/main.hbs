@@ -13,15 +13,90 @@
               <div class="text-header the-header">
                 <span>The</span>
               </div>
+              <div class="text-header stovetop-header">
+                <span>Stove Top</span>
+              </div>
               <div class="text-header brewshop-header">
                 <span>BREW SHOP</span>
               </div>
               <div class="bc-ruler">
               </div>
               <div class="text-header sofia-header">
-                <span>Sofia</span>
+                <span>Sofia, Bulgaria</span>
               </div>
           </div>
+          <hr>
+          <div class="store-container">
+            <div class="calculator">
+              <div class="shop-container form-group col-md-3">
+                  <div class="ingredient">
+                  </div>
+              </div>
+              <div class="shop-container form-group col-md-3">
+                  <div class="ingredient">
+                  </div>
+              </div>
+              <div class="shop-container form-group col-md-3">
+                  <div class="ingredient">
+                  </div>
+              </div>
+              <div class="shop-container form-group col-md-3">
+                  <div class="ingredient">
+                  </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="videos-container">
+            <div class="calculator">
+              <div class="video-container form-group col-md-3">
+                  <div class="ingredient">
+                  </div>
+              </div>
+              <div class="video-container form-group col-md-3">
+                  <div class="ingredient">
+                  </div>
+              </div>
+              <div class="video-container form-group col-md-3">
+                  <div class="ingredient">
+                  </div>
+              </div>
+              <div class="video-container form-group col-md-3">
+                  <div class="ingredient">
+                  </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="title-container">
+              <div class="text-header sofia-header">
+                <span>Choose from one of our tried and tested</span>
+              </div>
+              <div class="text-header stovetop-header">
+                <span>Recipe Packs</span>
+              </div>
+          </div>
+          <div class="recipes-container">
+            <div class="calculator">
+              <div class="recipe-container form-group col-md-3">
+                  <div class="ingredient">
+                  </div>
+              </div>
+              <div class="recipe-container form-group col-md-3">
+                  <div class="ingredient">
+                  </div>
+              </div>
+              <div class="recipe-container form-group col-md-3">
+                  <div class="ingredient">
+                  </div>
+              </div>
+              <div class="recipe-container form-group col-md-3">
+                  <div class="ingredient">
+                  </div>
+              </div>
+            </div>
+          </div>
+          <hr>
           <div class="batch-container">
             <span class="calculator-text">Let's make a </span>
             <input class="form-control bc-input-small" ng-model="size" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="size"/>
@@ -120,26 +195,12 @@
                           <i class="check fa fa-check" ng-show="srmlow <= srm && srm <= srmhi"></i>
                           <i class="cross fa fa-times" ng-show="srmlow > srm || srm > srmhi"></i>
                       </div>
-                  <!--
-                      <label for="og">OG: {[{oglow}]}-{[{oghi}]}</label>
-                      <input class="form-control bc-input-small" ng-model="og" id="og" readonly="readonly">
-                      <br>
-                      <label>FG: {[{fglow}]}-{[{fghi}]}</label>
-                      <input class="form-control bc-input-small" ng-model="fg" id="fg" readonly="readonly">
-                      <br>
-                      <label>ABV: {[{abvlow}]}-{[{abvhi}]}</label>
-                      <input class="form-control bc-input-small" ng-model="abv" id="abv" readonly="readonly">
-                      <br>
-                      <label>IBU: {[{ibulow}]}-{[{ibuhi}]}</label>
-                      <input class="form-control bc-input-small" ng-model="ibu" id="ibu" readonly="readonly">
-                      <br>
-                      <label>SRM: {[{srmlow}]}-{[{srmhi}]}</label>
-                      <span style="width: 5%; height: 21px; vertical-align: middle; display: inline-block; background: {[{srmColor()}]};"></span>
-                      <input class="form-control bc-input-small" ng-model="srm" id="srm" readonly="readonly">
-                  -->
                   </div>
               </div>
           </div>
+        </div>
+        <div class="bottom-spacer">
+        </div>
       </div>
 
       <script src="bower_components/angular/angular.js"></script>
