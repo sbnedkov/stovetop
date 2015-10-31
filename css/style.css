@@ -248,7 +248,7 @@ body {
 .results {
     text-align: center;
     background: rgba(255, 218, 170, 0.57) url('../img/beer.png') no-repeat scroll center center;
-    background-size: auto 100%;
+    background-size: auto 90%;
 }
 
 .results-details {
