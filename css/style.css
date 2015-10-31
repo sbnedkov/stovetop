@@ -7,21 +7,26 @@ body {
     position: absolute;
 /*    top: 52px; */
     width: 100%;
+    height: 200vh;
     background: #222 url('../img/background.jpg') no-repeat local center center;
     z-index: 100;
 }
 
 .main-top {
+    position: absolute;
+    top: 0;
     height: 100vh;
 }
 
 .main-bottom {
+    position: absolute;
+    top: 100vh;
     height: 100vh;
 }
 
 .title-container {
     width: 100%;
-    margin-top: 20px;
+    height: 25%;
 }
 
 .text-header {
@@ -78,10 +83,12 @@ body {
 
 .long-ruler {
     width: 80%;
-    margin: 20px auto;
+    height: 5%;
+    margin: 0 auto;
     border-bottom: 2px solid white;
 }
 
+/*
 .header {
     position: fixed;
     left: 0;
@@ -91,46 +98,48 @@ body {
     background-color: #222;
     z-index: 1000;
 }
+*/
 
 .store-container {
     width: 100%;
+    height: 40%;
     overflow: auto;
 }
 
 .shop-container {
-    height: 210px;
     margin: 0;
+    height: 100%;
 }
 
 .videos-container {
     width: 100%;
-    height: 250px;
+    height: 35%;
     overflow: auto;
 }
 
 .video-container {
-    height: 150px;
     margin: 0;
 }
 
 .recipes-container {
     width: 100%;
+    height: 50%;
     overflow: auto;
 }
 
 .recipe-container {
-    height: 180px;
     margin: 0;
 }
 
 .calculator-container {
     width: 100%;
+    height: 50%;
     overflow: auto;
 }
 
 .ingredient-container {
-    height: 300px;
     margin: 0;
+    height: 100%;
 }
 
 .batch-container {
@@ -153,7 +162,8 @@ body {
 }
 
 .calculator {
-    padding: 20px 200px;
+    height: 95%;
+    padding: 0 10%;
 }
 
 .calculator-text {
@@ -228,36 +238,44 @@ body {
 }
 */
 
+.shop-item {
+    width: 80%;
+    height: 85%;
+    border: 1px solid #2B1502;
+    background-color: rgba(255, 218, 170, 0.57);
+}
+
 .shop-fermentables {
-    background-image: url('../img/fermentables.jpeg');
-    background-size: cover;
-    height: 180px;
+    background: url('../img/fermentables.jpeg') no-repeat center center;
+    background-size: 100% auto;
+    width: 100%;
     cursor: pointer;
 }
 
 .shop-hops {
-    background-image: url('../img/hops.jpeg');
-    background-size: cover;
-    height: 180px;
+    background: url('../img/hops.jpeg') no-repeat center center;
+    background-size: 100% auto;
+    width: 100%;
     cursor: pointer;
 }
 
 .shop-yeast {
-    background-image: url('../img/yeast.jpg');
-    background-size: cover;
-    height: 180px;
+    background: url('../img/yeast.jpg') no-repeat center center;
+    background-size: 100% auto;
+    width: 100%;
     cursor: pointer;
 }
 
 .shop-equipment {
-    background-image: url('../img/equipment.jpeg');
-    background-size: cover;
-    height: 180px;
+    background: url('../img/equipment.jpeg') no-repeat center center;
+    background-size: 100% auto;
+    width: 100%;
     cursor: pointer;
 }
 
 .shop-label {
-    height: 30px;
+    width: 100%;
+    height: 15%;
     color: #2B1502;
     background: #FFF;
     font-size: 18px;

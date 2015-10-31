@@ -24,42 +24,42 @@
               <div class="text-header sofia-header">
                 <span>Sofia, Bulgaria</span>
               </div>
-          </div>
-          <div class="long-ruler">
+              <div class="long-ruler">
+              </div>
           </div>
           <div class="store-container">
             <div class="calculator">
               <div class="shop-container form-group col-md-3">
-                  <div class="shop-fermentables ingredient" ng-click="click('shop-fermentables')">
+                  <div class="shop-fermentables shop-item" ng-click="click('shop-fermentables')">
                   </div>
                   <div class="text-header shop-label">
                     <span>Malt extract + Grain</span>
                   </div>
               </div>
               <div class="shop-container form-group col-md-3">
-                  <div class="shop-hops ingredient" ng-click="click('shop-hops')">
+                  <div class="shop-hops shop-item" ng-click="click('shop-hops')">
                   </div>
                   <div class="text-header shop-label">
                     <span>Hops</span>
                   </div>
               </div>
               <div class="shop-container form-group col-md-3">
-                  <div class="shop-yeast ingredient" ng-click="click('shop-yeast')">
+                  <div class="shop-yeast shop-item" ng-click="click('shop-yeast')">
                   </div>
                   <div class="text-header shop-label">
                     <span>Yeast</span>
                   </div>
               </div>
               <div class="shop-container form-group col-md-3">
-                  <div class="shop-equipment ingredient" ng-click="click('shop-equipment')">
+                  <div class="shop-equipment shop-item" ng-click="click('shop-equipment')">
                   </div>
                   <div class="text-header shop-label">
                     <span>Equipment</span>
                   </div>
               </div>
             </div>
-          </div>
-          <div class="long-ruler">
+            <div class="long-ruler">
+            </div>
           </div>
           <div class="videos-container">
             <div class="calculator">
@@ -88,20 +88,20 @@
                   </div>
               </div>
             </div>
-          </div>
-          <div class="long-ruler">
+            <div class="long-ruler">
+            </div>
           </div>
         </div>
         <div class="main-bottom">
-          <div class="title-container">
-              <div class="text-header sofia-header">
-                <span>Choose from one of our tried and tested</span>
-              </div>
-              <div class="text-header stovetop-header">
-                <span>Recipe Packs</span>
-              </div>
-          </div>
           <div class="recipes-container">
+            <div class="title-container">
+                <div class="text-header sofia-header">
+                  <span>Choose from one of our tried and tested</span>
+                </div>
+                <div class="text-header stovetop-header">
+                  <span>Recipe Packs</span>
+                </div>
+            </div>
             <div class="calculator">
               <div class="recipe-container form-group col-md-3">
                   <div class="ingredient">
@@ -120,23 +120,23 @@
                   </div>
               </div>
             </div>
-          </div>
-          <div class="long-ruler">
-          </div>
-          <div class="batch-container">
-            <span class="calculator-text">Let's make a </span>
-            <input class="form-control bc-input-small" ng-model="size" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="size"/>
-            <span class="calculator-text"> litres batch (
-            <input class="form-control bc-input-small" ng-model="boilsize" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="boilsize"/>
-            <span class="calculator-text"> litres boil)
-            <span class="calculator-text"> of </span>
-            <select class="form-control bc-input" ng-model="style" name="style">
-              {{#each styles}}
-                <option value="{{data}}">{{name}}</option>
-              {{/each}}
-            </select>
+            <div class="long-ruler">
+            </div>
           </div>
           <div class="calculator-container">
+            <div class="batch-container">
+              <span class="calculator-text">Let's make a </span>
+              <input class="form-control bc-input-small" ng-model="size" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="size"/>
+              <span class="calculator-text"> litres batch (
+              <input class="form-control bc-input-small" ng-model="boilsize" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="boilsize"/>
+              <span class="calculator-text"> litres boil)
+              <span class="calculator-text"> of </span>
+              <select class="form-control bc-input" ng-model="style" name="style">
+                {{#each styles}}
+                  <option value="{{data}}">{{name}}</option>
+                {{/each}}
+              </select>
+            </div>
             <div class="calculator">
               <div class="ingredient-container form-group col-md-3">
                   <div class="ingredient">
