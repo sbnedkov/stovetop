@@ -15,12 +15,14 @@ body {
 .main-top {
     position: absolute;
     top: 0;
+    width: 100%;
     height: 100vh;
 }
 
 .main-bottom {
     position: absolute;
     top: 100vh;
+    width: 100%;
     height: 100vh;
 }
 
@@ -107,17 +109,19 @@ body {
 }
 
 .shop-container {
-    margin: 0;
     height: 100%;
+    margin: 0;
 }
 
 .videos-container {
     width: 100%;
     height: 35%;
+    padding-top: 2%;
     overflow: auto;
 }
 
 .video-container {
+    height: 85%;
     margin: 0;
 }
 
@@ -241,7 +245,6 @@ body {
 .shop-item {
     width: 80%;
     height: 85%;
-    border: 1px solid #2B1502;
     background-color: rgba(255, 218, 170, 0.57);
 }
 
@@ -275,7 +278,7 @@ body {
 
 .shop-label {
     width: 100%;
-    height: 15%;
+    max-height: 15%;
     color: #2B1502;
     background: #FFF;
     font-size: 18px;
