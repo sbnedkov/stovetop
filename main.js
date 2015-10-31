@@ -13,6 +13,7 @@ app.set('view engine', 'html');
 app.engine('html', hbs.__express);
 app.use('/src', express.static(__dirname + '/src'));
 app.use('/img', express.static(__dirname + '/img'));
+app.use('/views/templates', express.static(__dirname + '/views/templates'));
 app.use('/css', express.static(__dirname + '/css'));
 app.use('/bower_components', express.static(__dirname + '/bower_components'));
 app.use('/trewbrews-calc-public', express.static(__dirname + '/trewbrews-calc-public'));

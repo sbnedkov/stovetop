@@ -1,0 +1,106 @@
+<div class="calculator-container" ng-controller="calculator">
+  <div class="batch-container">
+    <div class="batch-data">
+      <span class="calculator-text">Let's make a </span>
+      <input class="form-control bc-input-small" ng-model="size" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="size"/>
+      <span class="calculator-text"> litres batch (
+      <input class="form-control bc-input-small" ng-model="boilsize" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="boilsize"/>
+      <span class="calculator-text"> litres boil)
+      <span class="calculator-text"> of </span>
+      <select class="form-control bc-input" ng-model="style" name="style">
+        {{#each styles}}
+          <option value="{{data}}">{{name}}</option>
+        {{/each}}
+      </select>
+    </div>
+  </div>
+  <div class="calculator-ingredients">
+    <div class="calculator">
+      <div class="ingredient-container form-group col-md-3">
+          <div class="ingredient">
+              <label class="calculator-text">Fermentables</label>
+              <br>
+              <div ng-repeat="fermentable in fermentablesarr">
+                <input class="form-control bc-input-small" ng-model="fermentable.size" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/">
+                <span>kg</span>
+                <select class="form-control bc-input-small" ng-model="fermentable.fermentable">
+                  {{#each fermentables}}
+                    <option value="{{data}}">{{name}}</option>
+                  {{/each}}
+                </select>
+                <i ng-click="deleteFermentable($index);" class="btn delete-button fa fa-times"></i>
+              </div>
+              <br>
+              <button class="btn button-default" type="button" ng-click="addFermentable();">ADD</button>
+              <i class="info fa fa-2x fa-info-circle"></i>
+              <span class="equation-text">+</span>
+          </div>
+      </div>
+      <div class="ingredient-container form-group col-md-3">
+          <div class="ingredient">
+              <label class="calculator-text">Hops</label>
+              <br>
+              <div ng-repeat="hop in hopsarr">
+                <input class="form-control bc-input-small" ng-model="hop.size" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/">
+                <span>g</span>
+                <select class="form-control bc-input-small" ng-model="hop.hop">
+                  {{#each hops}}
+                    <option value="{{data}}">{{name}}</option>
+                  {{/each}}
+                </select>
+                <i ng-click="deleteHop($index);" class="btn delete-button fa fa-times"></i>
+                <br>
+                <input class="form-control bc-input-small" ng-model="hop.time" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/">
+                <span>minutes</span>
+              </div>
+              <br>
+              <button class="btn button-default" type="button" ng-click="addHop();">ADD</button>
+              <i class="info fa fa-2x fa-info-circle"></i>
+              <span class="equation-text">+</span>
+          </div>
+      </div>
+      <div class="ingredient-container form-group col-md-3">
+          <div class="ingredient">
+              <label class="calculator-text">Yeast</label>
+              <select class="form-control" ng-model="yeast" name="yeast">
+                {{#each yeasts}}
+                  <option value="{{data}}">{{name}}</option>
+                {{/each}}
+              </select>
+              <i class="info fa fa-2x fa-info-circle"></i>
+              <span class="equation-text">=</span>
+          </div>
+      </div>
+      <div class="ingredient-container form-group col-md-3">
+          <div class="ingredient results">
+              <div class="results-details center">
+                  <span>OG: </span>
+                  <span>{[{og}]}</span>
+                  <i class="check fa fa-check" ng-show="oglow <= og && og <= oghi"></i>
+                  <i class="cross fa fa-times" ng-show="oglow > og || og > oghi"></i>
+                  <br>
+                  <span>FG: </span>
+                  <span>{[{fg}]}</span>
+                  <i class="check fa fa-check" ng-show="fglow <= fg && fg <= fghi"></i>
+                  <i class="cross fa fa-times" ng-show="fglow > fg || fg > fghi"></i>
+                  <br>
+                  <span>ABV: </span>
+                  <span>{[{abv}]}%</span>
+                  <i class="check fa fa-check" ng-show="abvlow <= abv && abv <= abvhi"></i>
+                  <i class="cross fa fa-times" ng-show="abvlow > abv || abv > abvhi"></i>
+                  <br>
+                  <span>IBU: </span>
+                  <span>{[{ibu}]}</span>
+                  <i class="check fa fa-check" ng-show="ibulow <= ibu && ibu <= ibuhi"></i>
+                  <i class="cross fa fa-times" ng-show="ibulow > ibu || ibu > ibuhi"></i>
+                  <br>
+                  <span>SRM: </span>
+                  <span>{[{srm}]}</span>
+                  <i class="check fa fa-check" ng-show="srmlow <= srm && srm <= srmhi"></i>
+                  <i class="cross fa fa-times" ng-show="srmlow > srm || srm > srmhi"></i>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
