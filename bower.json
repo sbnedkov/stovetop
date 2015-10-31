@@ -15,6 +15,7 @@
   "dependencies": {
     "angular-bootstrap": "~0.14.2",
     "bootstrap": "~3.3.5",
-    "font-awesome": "~4.4.0"
+    "font-awesome": "~4.4.0",
+    "lodash": "~3.10.1"
   }
 }

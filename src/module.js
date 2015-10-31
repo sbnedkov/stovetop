@@ -1,1 +1,1 @@
-angular.module('stovetop', []);
+angular.module('stovetop', ['ui.bootstrap']);
