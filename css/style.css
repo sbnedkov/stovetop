@@ -11,6 +11,14 @@ body {
     z-index: 100;
 }
 
+.main-top {
+    height: 100vh;
+}
+
+.main-bottom {
+    height: 100vh;
+}
+
 .title-container {
     width: 100%;
     margin-top: 20px;
@@ -173,14 +181,6 @@ body {
 .bc-input-small {
     display: inline;
     width: 50px;
-    font-size: 12px;
-    line-height: 12px;
-    font-family: arial;
-}
-
-.bc-input-smallest {
-    display: inline;
-    width: 20px;
     font-size: 12px;
     line-height: 12px;
     font-family: arial;
