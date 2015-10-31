@@ -7,7 +7,7 @@ body {
     position: absolute;
 /*    top: 52px; */
     width: 100%;
-    background: #222 url('../img/longimage.png') no-repeat local center center;
+    background: #222 url('../img/background.jpg') no-repeat local center center;
     z-index: 100;
 }
 
@@ -68,6 +68,12 @@ body {
     border-bottom: 2px solid white;
 }
 
+.long-ruler {
+    width: 80%;
+    margin: 20px auto;
+    border-bottom: 2px solid white;
+}
+
 .header {
     position: fixed;
     left: 0;
@@ -84,7 +90,7 @@ body {
 }
 
 .shop-container {
-    height: 180px;
+    height: 210px;
     margin: 0;
 }
 
@@ -218,4 +224,40 @@ body {
 
 .bottom-spacer {
     height: 50px;
+}
+
+.shop-fermentables {
+    background-image: url('../img/fermentables.jpeg');
+    background-size: cover;
+    height: 180px;
+    cursor: pointer;
+}
+
+.shop-hops {
+    background-image: url('../img/hops.jpeg');
+    background-size: cover;
+    height: 180px;
+    cursor: pointer;
+}
+
+.shop-yeast {
+    background-image: url('../img/yeast.jpg');
+    background-size: cover;
+    height: 180px;
+    cursor: pointer;
+}
+
+.shop-equipment {
+    background-image: url('../img/equipment.jpeg');
+    background-size: cover;
+    height: 180px;
+    cursor: pointer;
+}
+
+.shop-label {
+    height: 30px;
+    color: #2B1502;
+    background: #FFF;
+    font-size: 18px;
+    font-family: lobster;
 }

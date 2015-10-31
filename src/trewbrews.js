@@ -166,4 +166,8 @@ trewbrews.controller('calculator', ['$scope', 'TrewbrewsCalculator', function ($
             $scope.ibu = result.ibu;
         }
     });
+
+    $scope.click = function () {
+        alert('Coming soon');
+    };
 }]);
