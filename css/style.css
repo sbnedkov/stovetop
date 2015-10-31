@@ -31,6 +31,11 @@ body {
     height: 25%;
 }
 
+.recipe-title-container {
+    width: 100%;
+    height: 35%;
+}
+
 .text-header {
     text-align: center;
     width: 100%;
@@ -127,17 +132,25 @@ body {
 
 .recipes-container {
     width: 100%;
-    height: 50%;
+    height: 40%;
     overflow: auto;
 }
 
 .recipe-container {
+    height: 100%;
     margin: 0;
+}
+
+.recipe {
+    width: 80%;
+    height: 100%;
+    background: url('../img/recipepack.jpg') no-repeat;
+    background-size: contain;
 }
 
 .calculator-container {
     width: 100%;
-    height: 50%;
+    height: 60%;
     overflow: auto;
 }
 
@@ -148,8 +161,8 @@ body {
 
 .batch-container {
     width: 40%;
-    height: 45px;
-    margin: 0 30%;
+    max-height: 20%;
+    margin: 2% 30%;
     padding: 5px 0 0 0;
     overflow: auto;
     border: 1px solid #2B1502;
@@ -169,6 +182,12 @@ body {
     height: 95%;
     padding: 0 10%;
 }
+
+.recipes {
+    height: 60%;
+    padding: 0 10%;
+}
+
 
 .calculator-text {
     margin: 0 5px;
@@ -283,4 +302,8 @@ body {
     background: #FFF;
     font-size: 18px;
     font-family: lobster;
+}
+
+.calculator-ingredients {
+    height: 65%;
 }
