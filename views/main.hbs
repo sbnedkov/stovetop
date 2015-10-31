@@ -128,17 +128,19 @@
           </div>
           <div class="calculator-container">
             <div class="batch-container">
-              <span class="calculator-text">Let's make a </span>
-              <input class="form-control bc-input-small" ng-model="size" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="size"/>
-              <span class="calculator-text"> litres batch (
-              <input class="form-control bc-input-small" ng-model="boilsize" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="boilsize"/>
-              <span class="calculator-text"> litres boil)
-              <span class="calculator-text"> of </span>
-              <select class="form-control bc-input" ng-model="style" name="style">
-                {{#each styles}}
-                  <option value="{{data}}">{{name}}</option>
-                {{/each}}
-              </select>
+              <div class="batch-data">
+                <span class="calculator-text">Let's make a </span>
+                <input class="form-control bc-input-small" ng-model="size" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="size"/>
+                <span class="calculator-text"> litres batch (
+                <input class="form-control bc-input-small" ng-model="boilsize" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="boilsize"/>
+                <span class="calculator-text"> litres boil)
+                <span class="calculator-text"> of </span>
+                <select class="form-control bc-input" ng-model="style" name="style">
+                  {{#each styles}}
+                    <option value="{{data}}">{{name}}</option>
+                  {{/each}}
+                </select>
+              </div>
             </div>
             <div class="calculator-ingredients">
               <div class="calculator">
@@ -199,7 +201,7 @@
                 </div>
                 <div class="ingredient-container form-group col-md-3">
                     <div class="ingredient results">
-                        <div class="results-details">
+                        <div class="results-details center">
                             <span>OG: </span>
                             <span>{[{og}]}</span>
                             <i class="check fa fa-check" ng-show="oglow <= og && og <= oghi"></i>

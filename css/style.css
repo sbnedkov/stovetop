@@ -160,13 +160,18 @@ body {
 }
 
 .batch-container {
-    width: 40%;
     max-height: 20%;
-    margin: 2% 30%;
+    margin: 2% 15%;
     padding: 5px 0 0 0;
+    text-align: center;
     overflow: auto;
     border: 1px solid #2B1502;
     background-color: rgba(255, 218, 170, 0.57);
+}
+
+.batch-data {
+    display: inline-block;
+    margin: auto;
 }
 
 .ingredient {
@@ -203,6 +208,14 @@ body {
     transform: translateY(-50%);
 }
 
+.center {
+    left: 50%;
+    top: 50%;
+    display: block;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
 .bc-input {
     display: inline;
     width: 180px;
@@ -233,17 +246,14 @@ body {
 }
 
 .results {
-    background: rgba(255, 218, 170, 0.57) url('../img/beer.png') no-repeat 0 40px;
-    background-size: 200px auto;
+    text-align: center;
+    background: rgba(255, 218, 170, 0.57) url('../img/beer.png') no-repeat scroll center center;
+    background-size: auto 100%;
 }
 
 .results-details {
-    position: absolute;
-    width: 100%;
-    top: 100px;
-    left: 105px;
     font-family: arial;
-    font-size: 10px;
+    font-size: 1.2em;
     color: #FFF;
 }
 
