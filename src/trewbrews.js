@@ -162,7 +162,7 @@ trewbrews.controller('calculator', ['$scope', 'TrewbrewsCalculator', function ($
             $scope.srm = result.srm;
             $scope.og = result.og;
             $scope.fg = result.fg;
-            $scope.abv = result.abv + '%';
+            $scope.abv = result.abv;
             $scope.ibu = result.ibu;
         }
     });
