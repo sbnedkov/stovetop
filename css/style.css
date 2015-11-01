@@ -43,6 +43,11 @@ body {
     height: 35%;
 }
 
+.calculator-title-container {
+    width: 100%;
+    height: 15%;
+}
+
 .text-header {
     text-align: center;
     width: 100%;
@@ -167,7 +172,7 @@ body {
 }
 
 .batch-container {
-    max-height: 40%;
+    max-height: 20%;
     margin: 2% 15%;
     padding: 5px 0 0 0;
     text-align: center;
@@ -322,5 +327,5 @@ body {
 }
 
 .calculator-ingredients {
-    height: 65%;
+    height: 55%;
 }
