@@ -5,8 +5,17 @@ trewbrews.config(function($interpolateProvider) {
     $interpolateProvider.endSymbol('}]}');
 });
 
-trewbrews.controller('calculator', ['$scope', 'TrewbrewsCalculator', function ($scope, Calculator) {
+trewbrews.controller('calculator', ['$scope', '$http', 'TrewbrewsCalculator', function ($scope, $http, Calculator) {
     var _ = window._;
+
+    $http.get('/data')
+        .success(function (data) {
+            _.extend($scope, data);
+        })
+        .error(function (err) {
+            console.log(err);
+            alert(JSON.stringify(err));
+        });
 
     $scope.calculator = Calculator();
     $scope.result = {};

@@ -20,6 +20,11 @@ app.use('/trewbrews-calc-public', express.static(__dirname + '/trewbrews-calc-pu
 
 app.get('/', function (req, res) {
     res.render('main.hbs', {
+    });
+});
+
+app.get('/data', function (req, res) {
+    res.json({
         fermentables: _.sortBy(_.map(fermentables, function (fermentable) {
             return {
                 name: fermentable.name,
