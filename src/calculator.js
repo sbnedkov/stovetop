@@ -1,11 +1,6 @@
-var trewbrews = angular.module('stovetop');
+var stovetop = angular.module('stovetop');
 
-trewbrews.config(function($interpolateProvider) {
-    $interpolateProvider.startSymbol('{[{');
-    $interpolateProvider.endSymbol('}]}');
-});
-
-trewbrews.controller('calculator', ['$scope', '$http', 'TrewbrewsCalculator', function ($scope, $http, Calculator) {
+stovetop.controller('calculator', ['$scope', '$http', 'TrewbrewsCalculator', function ($scope, $http, Calculator) {
     var _ = window._;
 
     $http.get('/data')
@@ -94,7 +89,7 @@ trewbrews.controller('calculator', ['$scope', '$http', 'TrewbrewsCalculator', fu
             });
         }
     });
-    
+
     function calculate () {
         var batchSize = $scope.size;
         var time = $scope.time;
@@ -175,8 +170,4 @@ trewbrews.controller('calculator', ['$scope', '$http', 'TrewbrewsCalculator', fu
             $scope.ibu = result.ibu;
         }
     });
-
-    $scope.click = function () {
-        alert('Coming soon');
-    };
 }]);
