@@ -48,9 +48,6 @@ app.get('/data', function (req, res) {
             }).
             value(),
         yeasts: _.chain(yeasts).
-            filter(function (yeast) {
-                return yeast.attenuation;
-            }).
             map(function (yeast) {
                 return {
                     name: yeast.name,

@@ -1,19 +1,19 @@
 [{
     "name": "Danstar Nottingham Yeast",
-    "attentuation": 77
+    "attenuation": 77
 }, {
     "name": "Danstar Lallemand Yeast",
-    "attentuation": 0
+    "attenuation": 0
 }, {
     "name": "Danstar Abbaye Belgian Ale Yeast",
-    "attentuation": 0
+    "attenuation": 0
 }, {
     "name": "Danstar Classic Ale Yeast",
-    "attentuation": 0
+    "attenuation": 0
 }, {
     "name": "Danstar Munich Classic Wheat Yeast",
-    "attentuation": 0
+    "attenuation": 0
 }, {
     "name": "Danstar Belle Saison Yeast",
-    "attentuation": 83
+    "attenuation": 83
 }]
