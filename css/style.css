@@ -3,19 +3,12 @@ body {
     font-family: arial;
 }
 
-.main-phone {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #222 url('../img/background.jpg') no-repeat local center 0;
-}
-
 .main {
     position: absolute;
 /*    top: 52px; */
     width: 100%;
     height: 200vh;
-    background: #222 url('../img/background.jpg') no-repeat local center 0;
+    background: #222 url('../img/background.jpg') no-repeat local center center;
     z-index: 100;
 }
 

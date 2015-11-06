@@ -8,25 +8,7 @@
   </head>
 
   <body ng-cloak ng-controller="stovetop">
-      <div class="main-phone visible-xs">
-          <ng-include src="'views/templates/titles.html'"></ng-include>
-          <uib-accordion>
-              <uib-accordion-group heading="Store">
-                  <ng-include src="'views/templates/store.html'"></ng-include>
-              </uib-accordion-group>
-              <uib-accordion-group heading="Videos">
-                  <ng-include src="'views/templates/videos.html'"></ng-include>
-              </uib-accordion-group>
-              <uib-accordion-group heading="Recipes">
-                  <ng-include src="'views/templates/recipes.html'"></ng-include>
-              </uib-accordion-group>
-              <uib-accordion-group heading="Calculator">
-                  <ng-include src="'views/templates/calculator.html'"></ng-include>
-              </uib-accordion-group>
-          </uib-accordion>
-      </div>
-
-      <div class="main hidden-xs">
+      <div class="main">
         <div class="main-top">
           <ng-include src="'views/templates/titles.html'"></ng-include>
           <ng-include src="'views/templates/store.html'"></ng-include>
