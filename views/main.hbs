@@ -4,10 +4,11 @@
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Stove Top Brew Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body ng-cloak ng-controller="stovetop">
-      <div class="main-phone visible-sm">
+      <div class="main-phone visible-xs">
           <ng-include src="'views/templates/titles.html'"></ng-include>
           <uib-accordion>
               <uib-accordion-group heading="Store">
@@ -25,7 +26,7 @@
           </uib-accordion>
       </div>
 
-      <div class="main hidden-sm">
+      <div class="main hidden-xs">
         <div class="main-top">
           <ng-include src="'views/templates/titles.html'"></ng-include>
           <ng-include src="'views/templates/store.html'"></ng-include>

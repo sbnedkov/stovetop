@@ -1,5 +1,5 @@
 body {
-    background-color: #2B1502;
+/*    background-color: #2B1502; */ */
     font-family: arial;
 }
 
@@ -7,7 +7,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #222 url('../img/background.jpg') no-repeat local center center;
+    background: #222 url('../img/background.jpg') no-repeat local center 0;
 }
 
 .main {
@@ -15,7 +15,7 @@ body {
 /*    top: 52px; */
     width: 100%;
     height: 200vh;
-    background: #222 url('../img/background.jpg') no-repeat local center center;
+    background: #222 url('../img/background.jpg') no-repeat local center 0;
     z-index: 100;
 }
 
