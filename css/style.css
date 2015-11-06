@@ -341,3 +341,13 @@ body {
 .calculator-ingredients {
     height: 55%;
 }
+
+.video img {
+    width: auto;
+    height: 100%;
+    cursor: pointer;
+}
+
+.video {
+    text-align: center;
+}
