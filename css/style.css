@@ -311,7 +311,9 @@ body {
 }
 
 .shop-label {
-    width: 100%;
+    top: 0;
+    position: absolute;
+    width: 85%;
     max-height: 15%;
     color: #2B1502;
     background: #FFF;
