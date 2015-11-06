@@ -100,6 +100,12 @@ body {
     border-bottom: 2px solid white;
 }
 
+.bottom-ruler {
+    position: absolute;
+    bottom: 0;
+    margin: 0 10%;
+}
+
 /*
 .header {
     position: fixed;
@@ -130,8 +136,14 @@ body {
 }
 
 .video-container {
-    height: 85%;
+    height: 160px;
     margin: 0;
+}
+
+@media (min-width: 400px) and (max-width: 768px) {
+    .video-container {
+        height: 100px;
+    }
 }
 
 .recipes-container {
@@ -206,9 +218,9 @@ body {
 }
 
 .vertical-center {
-    top: 50%;
+    position: relative;
     display: block;
-    position: absolute;
+    top: 50%;
     transform: translateY(-50%);
 }
 
@@ -283,7 +295,11 @@ body {
 
 @media (min-width: 400px) and (max-width: 768px) {
     .shop-item {
-        height: 180px;
+        height: 160px;
+    }
+
+    .shop-label {
+        margin-bottom: 20px;
     }
 }
 
