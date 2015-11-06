@@ -119,7 +119,6 @@ body {
 }
 
 .shop-container {
-    height: 100%;
     margin: 0;
 }
 
@@ -277,9 +276,15 @@ body {
 */
 
 .shop-item {
-    width: 80%;
-    height: 85%;
+    width: auto;
+    height: 250px;
     background-color: rgba(255, 218, 170, 0.57);
+}
+
+@media (min-width: 400px) and (max-width: 768px) {
+    .shop-item {
+        height: 180px;
+    }
 }
 
 .shop-fermentables {
@@ -311,10 +316,6 @@ body {
 }
 
 .shop-label {
-    top: 0;
-    position: absolute;
-    width: 85%;
-    max-height: 15%;
     color: #2B1502;
     background: #FFF;
     font-size: 18px;
