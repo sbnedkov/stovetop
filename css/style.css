@@ -148,6 +148,10 @@ body {
   .video-container {
       height: 100px;
   }
+
+  .shop-item {
+    height: 160px;
+  }
 }
 
 .recipes-container {
@@ -299,41 +303,27 @@ body {
   background-color: rgba(255, 218, 170, 0.57);
 }
 
-@media (min-width: 400px) and (max-width: 768px) {
-  .shop-item {
-    height: 160px;
-  }
-
-  .shop-label {
-    margin-bottom: 20px;
-  }
-}
-
 .shop-fermentables {
   background: url('../img/fermentables.jpeg') no-repeat center center;
   background-size: 100% auto;
-  width: 100%;
   cursor: pointer;
 }
 
 .shop-hops {
   background: url('../img/hops.jpeg') no-repeat center center;
   background-size: 100% auto;
-  width: 100%;
   cursor: pointer;
 }
 
 .shop-yeast {
   background: url('../img/yeast.jpg') no-repeat center center;
   background-size: 100% auto;
-  width: 100%;
   cursor: pointer;
 }
 
 .shop-equipment {
   background: url('../img/equipment.jpeg') no-repeat center center;
   background-size: 100% auto;
-  width: 100%;
   cursor: pointer;
 }
 
