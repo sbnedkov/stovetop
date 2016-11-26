@@ -126,8 +126,10 @@ body {
 }
 
 .shop-container {
+  display: flex;
+  flex-direction: column;
   margin: auto;
-  flex-grow: 2;
+  flex-grow: 1;
 }
 
 .videos-container {
@@ -205,6 +207,8 @@ body {
   height: 95%;
   padding: 0 10%;
   display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 
 .recipes {
