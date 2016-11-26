@@ -126,10 +126,8 @@ body {
 }
 
 .shop-container {
-  display: flex;
-  flex-direction: column;
+  height: 250px;
   margin: auto;
-  flex-grow: 1;
 }
 
 .videos-container {
@@ -144,6 +142,7 @@ body {
   margin: 0;
 }
 
+/*
 @media (min-width: 400px) and (max-width: 768px) {
   .video-container {
       height: 100px;
@@ -153,6 +152,7 @@ body {
     height: 160px;
   }
 }
+*/
 
 .recipes-container {
   width: 100%;
@@ -210,9 +210,6 @@ body {
 .calculator {
   height: 95%;
   padding: 0 10%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
 }
 
 .recipes {
@@ -299,7 +296,7 @@ body {
 */
 
 .shop-item {
-  height: 250px;
+  height: 100%;
   background-color: rgba(255, 218, 170, 0.57);
 }
 
@@ -316,7 +313,7 @@ body {
 }
 
 .shop-yeast {
-  background: url('../img/yeast.jpg') no-repeat center center;
+  background: url('../img/yeast.jpeg') no-repeat center center;
   background-size: 100% auto;
   cursor: pointer;
 }

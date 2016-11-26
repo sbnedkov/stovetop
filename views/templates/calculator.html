@@ -10,9 +10,9 @@
   <div class="batch-container">
     <div class="batch-data">
       <span class="calculator-text">Let's make a </span>
-      <input class="form-control bc-input-small" ng-model="size" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="size"/>
+      <input class="form-control bc-input-small" ng-model="size" type="number" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="size"/>
       <span class="calculator-text"> litres batch (
-      <input class="form-control bc-input-small" ng-model="boilsize" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="boilsize"/>
+      <input class="form-control bc-input-small" ng-model="boilsize" type="number" ng-pattern="/^[0-9]+(\.[0-9]+)?$/" name="boilsize"/>
       <span class="calculator-text"> litres boil)
       <span class="calculator-text"> of </span>
       <select class="form-control bc-input" ng-model="style" name="style" ng-options="s.data as s.name for s in styles">
@@ -26,7 +26,7 @@
               <label class="calculator-text">Fermentables</label>
               <br>
               <div ng-repeat="fermentable in fermentablesarr">
-                <input class="form-control bc-input-small" ng-model="fermentable.size" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/">
+                <input class="form-control bc-input-small" ng-model="fermentable.size" type="number" ng-pattern="/^[0-9]+(\.[0-9]+)?$/">
                 <span>kg</span>
                 <select class="form-control bc-input-small" ng-model="fermentable.fermentable" ng-options="f.data as f.name for f in fermentables">
                 </select>
@@ -43,13 +43,13 @@
               <label class="calculator-text">Hops</label>
               <br>
               <div ng-repeat="hop in hopsarr">
-                <input class="form-control bc-input-small" ng-model="hop.size" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/">
+                <input class="form-control bc-input-small" ng-model="hop.size" type="number" ng-pattern="/^[0-9]+(\.[0-9]+)?$/">
                 <span>g</span>
                 <select class="form-control bc-input-small" ng-model="hop.hop" ng-options="h.data as h.name for h in hops">
                 </select>
                 <i ng-click="deleteHop($index);" class="btn delete-button fa fa-times"></i>
                 <br>
-                <input class="form-control bc-input-small" ng-model="hop.time" type="text" ng-pattern="/^[0-9]+(\.[0-9]+)?$/">
+                <input class="form-control bc-input-small" ng-model="hop.time" type="number" ng-pattern="/^[0-9]+(\.[0-9]+)?$/">
                 <span>minutes</span>
               </div>
               <br>
