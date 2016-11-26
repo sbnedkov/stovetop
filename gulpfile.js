@@ -28,7 +28,7 @@ gulp.task('browserify', function () {
 });
 
 gulp.task('watch-src', function () {
-    return gulp.watch(['src/**/*.js', 'public/**/*.js', 'views/**/*.hbs'], ['restart-server']);
+    return gulp.watch(['main.js', 'src/**/*.js', 'public/**/*.js', 'views/**/*.hbs'], ['restart-server']);
 });
 
 gulp.task('dev', ['es6fy', 'watch-src', 'start-server']);

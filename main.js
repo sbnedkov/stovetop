@@ -60,7 +60,7 @@ app.get('/data', function (req, res) {
             value(),
         styles: _.chain(styles).
             filter(function (style) {
-                return _.all(style, function (value) {
+                return _.every(style, function (value) {
                     return value !== 'Variable';
                 });
             }).

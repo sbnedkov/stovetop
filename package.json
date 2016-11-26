@@ -20,5 +20,8 @@
     "hbs": "latest",
     "lodash": "latest",
     "vinyl-source-stream": "^1.1.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.18.0"
   }
 }

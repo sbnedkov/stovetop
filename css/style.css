@@ -1,353 +1,355 @@
 body {
 /*    background-color: #2B1502; */ */
-    font-family: arial;
+  font-family: arial;
 }
 
 .main {
-    position: absolute;
+  position: absolute;
 /*    top: 52px; */
-    width: 100%;
-    height: 200vh;
-    background: #222 url('../img/background.jpg') no-repeat local center center;
-    z-index: 100;
+  width: 100%;
+  height: 200vh;
+  background: #222 url('../img/background.jpg') 0 center;
+  background-size: cover;
+  z-index: 100;
 }
 
 .main-top {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100vh;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
 }
 
 .main-bottom {
-    position: absolute;
-    top: 100vh;
-    width: 100%;
-    height: 100vh;
+  position: absolute;
+  top: 100vh;
+  width: 100%;
+  height: 100vh;
 }
 
 .title-container {
-    width: 100%;
-    height: 25%;
+  width: 100%;
+  height: 25%;
 }
 
 .recipe-title-container {
-    width: 100%;
-    height: 35%;
+  width: 100%;
+  height: 35%;
 }
 
 .calculator-title-container {
-    width: 100%;
-    height: 15%;
+  width: 100%;
+  height: 15%;
 }
 
 .text-header {
-    text-align: center;
-    width: 100%;
+  text-align: center;
+  width: 100%;
 }
 
 .the-header span {
-    margin: 0 auto;
-    font-family: lobster;
-    font-size: 3vh;
-    line-height: 90%;
-    color: #FFF;
+  margin: 0 auto;
+  font-family: lobster;
+  font-size: 3vh;
+  line-height: 90%;
+  color: #FFF;
 }
 
 .brewshop-header span {
-    margin: 0 auto;
-    font-family: impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
-    font-size: 8vh;
-    line-height: 90%;
-    color: #FFF;
+  margin: 0 auto;
+  font-family: impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
+  font-size: 8vh;
+  line-height: 90%;
+  color: #FFF;
 }
 
 .stovetop-header span {
-    margin: 0 auto;
-    font-family: impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
-    font-size: 5vh;
-    color: #FFF;
+  margin: 0 auto;
+  font-family: impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
+  font-size: 5vh;
+  color: #FFF;
 }
 
 .sofia-header span {
-    margin: 0 auto;
-    font-family: lobster;
-    font-weight: bold;
-    font-size: 3vh;
-    color: #FFF;
+  margin: 0 auto;
+  font-family: lobster;
+  font-weight: bold;
+  font-size: 3vh;
+  color: #FFF;
 }
 
 .equation-text {
-    position: absolute;
-    top: 40%;
-    right: -15px;
-    font-family: impact;
-    font-weight: bold;
-    font-size: 40px;
-    color: #FFF;
+  position: absolute;
+  top: 40%;
+  right: -15px;
+  font-family: impact;
+  font-weight: bold;
+  font-size: 40px;
+  color: #FFF;
 }
 
 .bc-ruler {
-    width: 12%;
-    margin: 5px auto;
-    border-bottom: 2px solid white;
+  width: 12%;
+  margin: 5px auto;
+  border-bottom: 2px solid white;
 }
 
 .long-ruler {
-    width: 80%;
-    height: 5%;
-    margin: 0 auto;
-    border-bottom: 2px solid white;
+  width: 80%;
+  height: 5%;
+  margin: 0 auto;
+  border-bottom: 2px solid white;
 }
 
 .bottom-ruler {
-    position: absolute;
-    bottom: 0;
-    margin: 0 10%;
+  position: absolute;
+  bottom: 0;
+  margin: 0 10%;
 }
 
 /*
 .header {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 52px;
-    background-color: #222;
-    z-index: 1000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 52px;
+  background-color: #222;
+  z-index: 1000;
 }
 */
 
 .store-container {
-    width: 100%;
-    height: 40%;
-    overflow: auto;
+  width: 100%;
+  height: 40%;
+  overflow: auto;
 }
 
 .shop-container {
-    margin: 0;
+  margin: auto;
+  flex-grow: 2;
 }
 
 .videos-container {
-    width: 100%;
-    height: 35%;
-    padding-top: 2%;
-    overflow: auto;
+  width: 100%;
+  height: 35%;
+  padding-top: 2%;
+  overflow: auto;
 }
 
 .video-container {
-    height: 160px;
-    margin: 0;
+  height: 160px;
+  margin: 0;
 }
 
 @media (min-width: 400px) and (max-width: 768px) {
-    .video-container {
-        height: 100px;
-    }
+  .video-container {
+      height: 100px;
+  }
 }
 
 .recipes-container {
-    width: 100%;
-    height: 40%;
-    overflow: auto;
+  width: 100%;
+  height: 40%;
+  overflow: auto;
 }
 
 .recipe-container {
-    height: 100%;
-    margin: 0;
+  height: 100%;
+  margin: 0;
 }
 
 .recipe {
-    width: 80%;
-    height: 100%;
-    background: url('../img/recipepack.jpg') no-repeat;
-    background-size: contain;
+  width: 80%;
+  height: 100%;
+  background: url('../img/recipepack.jpg') no-repeat;
+  background-size: contain;
 }
 
 .calculator-container {
-    width: 100%;
-    height: 60%;
-    overflow: auto;
+  width: 100%;
+  height: 60%;
+  overflow: auto;
 }
 
 .ingredient-container {
-    margin: 0;
-    height: 100%;
+  margin: 0;
+  height: 100%;
 }
 
 .batch-container {
-    max-height: 20%;
-    margin: 2% 15%;
-    padding: 5px 0 0 0;
-    text-align: center;
-    overflow: auto;
-    border: 1px solid #2B1502;
-    background-color: rgba(255, 218, 170, 0.57);
+  max-height: 20%;
+  margin: 2% 15%;
+  padding: 5px 0 0 0;
+  text-align: center;
+  overflow: auto;
+  border: 1px solid #2B1502;
+  background-color: rgba(255, 218, 170, 0.57);
 }
 
 .batch-data {
-    display: inline-block;
-    margin: auto;
+  display: inline-block;
+  margin: auto;
 }
 
 .ingredient {
-    width: 80%;
-    height: 100%;
-    margin: 0 10%;
-    padding: 5px;
-    border: 1px solid #2B1502;
-    background-color: rgba(255, 218, 170, 0.57);
+  width: 80%;
+  height: 100%;
+  margin: 0 10%;
+  padding: 5px;
+  border: 1px solid #2B1502;
+  background-color: rgba(255, 218, 170, 0.57);
 }
 
 .calculator {
-    height: 95%;
-    padding: 0 10%;
+  height: 95%;
+  padding: 0 10%;
+  display: flex;
 }
 
 .recipes {
-    height: 60%;
-    padding: 0 10%;
+  height: 60%;
+  padding: 0 10%;
 }
 
 
 .calculator-text {
-    margin: 0 5px;
-    font-family: lobster;
-    font-size: 16px;
-    color: #FFF;
+  margin: 0 5px;
+  font-family: lobster;
+  font-size: 16px;
+  color: #FFF;
 }
 
 .vertical-center {
-    position: relative;
-    display: block;
-    top: 50%;
-    transform: translateY(-50%);
+  position: relative;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .center {
-    left: 50%;
-    top: 50%;
-    display: block;
-    position: absolute;
-    transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+  display: block;
+  position: absolute;
+  transform: translate(-50%,-50%);
 }
 
 .bc-input {
-    display: inline;
-    width: 180px;
-    font-size: 12px;
-    line-height: 12px;
-    font-family: arial;
+  display: inline;
+  width: 180px;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: arial;
 }
 
 .bc-input-small {
-    display: inline;
-    width: 50px;
-    font-size: 12px;
-    line-height: 12px;
-    font-family: arial;
+  display: inline;
+  width: 50px;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: arial;
 }
 
 .delete-button {
-    color: lightgray;
-    font-weight: bold;
+  color: lightgray;
+  font-weight: bold;
 }
 
 .info {
-    position: absolute;
-    right: 50px;
-    bottom: 10px;
-    color: white;
-    cursor: default;
+  position: absolute;
+  right: 50px;
+  bottom: 10px;
+  color: white;
+  cursor: default;
 }
 
 .results {
-    text-align: center;
-    background: rgba(255, 218, 170, 0.57) url('../img/beer.png') no-repeat scroll center center;
-    background-size: auto 90%;
+  text-align: center;
+  background: rgba(255, 218, 170, 0.57) url('../img/beer.png') no-repeat scroll center center;
+  background-size: auto 90%;
 }
 
 .results-details {
-    font-family: arial;
-    font-size: 1.2em;
-    color: #FFF;
+  font-family: arial;
+  font-size: 1.2em;
+  color: #FFF;
 }
 
 .check {
-    color: green;
+  color: green;
 }
 
 .cross {
-    color: red;
+  color: red;
 }
 
 /*
 .bottom-spacer {
-    height: 50px;
+  height: 50px;
 }
 */
 
 .shop-item {
-    width: auto;
-    height: 250px;
-    background-color: rgba(255, 218, 170, 0.57);
+  height: 250px;
+  background-color: rgba(255, 218, 170, 0.57);
 }
 
 @media (min-width: 400px) and (max-width: 768px) {
-    .shop-item {
-        height: 160px;
-    }
+  .shop-item {
+    height: 160px;
+  }
 
-    .shop-label {
-        margin-bottom: 20px;
-    }
+  .shop-label {
+    margin-bottom: 20px;
+  }
 }
 
 .shop-fermentables {
-    background: url('../img/fermentables.jpeg') no-repeat center center;
-    background-size: 100% auto;
-    width: 100%;
-    cursor: pointer;
+  background: url('../img/fermentables.jpeg') no-repeat center center;
+  background-size: 100% auto;
+  width: 100%;
+  cursor: pointer;
 }
 
 .shop-hops {
-    background: url('../img/hops.jpeg') no-repeat center center;
-    background-size: 100% auto;
-    width: 100%;
-    cursor: pointer;
+  background: url('../img/hops.jpeg') no-repeat center center;
+  background-size: 100% auto;
+  width: 100%;
+  cursor: pointer;
 }
 
 .shop-yeast {
-    background: url('../img/yeast.jpg') no-repeat center center;
-    background-size: 100% auto;
-    width: 100%;
-    cursor: pointer;
+  background: url('../img/yeast.jpg') no-repeat center center;
+  background-size: 100% auto;
+  width: 100%;
+  cursor: pointer;
 }
 
 .shop-equipment {
-    background: url('../img/equipment.jpeg') no-repeat center center;
-    background-size: 100% auto;
-    width: 100%;
-    cursor: pointer;
+  background: url('../img/equipment.jpeg') no-repeat center center;
+  background-size: 100% auto;
+  width: 100%;
+  cursor: pointer;
 }
 
 .shop-label {
-    color: #2B1502;
-    background: #FFF;
-    font-size: 18px;
-    font-family: lobster;
+  color: #2B1502;
+  background: #FFF;
+  font-size: 18px;
+  font-family: lobster;
 }
 
 .calculator-ingredients {
-    height: 55%;
+  height: 55%;
 }
 
 .video img {
-    width: auto;
-    height: 100%;
-    cursor: pointer;
+  width: auto;
+  height: 100%;
+  cursor: pointer;
 }
 
 .video {
-    text-align: center;
+  text-align: center;
 }
