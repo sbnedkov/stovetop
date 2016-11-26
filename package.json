@@ -11,12 +11,12 @@
   "dependencies": {
     "angular": "^1.4.7",
     "babel": "^5.8.29",
-    "babelify": "^6.4.0",
-    "browserify": "^11.2.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.1",
     "express": "latest",
     "gulp": "^3.9.0",
-    "gulp-bower": "0.0.10",
-    "gulp-develop-server": "^0.4.3",
+    "gulp-bower": "0.0.13",
+    "gulp-develop-server": "^0.5.2",
     "hbs": "latest",
     "lodash": "latest",
     "vinyl-source-stream": "^1.1.0"
