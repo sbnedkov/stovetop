@@ -18,7 +18,7 @@ html(ng-app='stovetop')
           ng-include(src="'views/templates/calculator.html'")
       if mobile
         ng-include(src="'views/templates/titles.html'")
-        ang-accordion
+        ang-accordion(one-at-a-time="true" icon-position="left" close-icon-url="bower_components/ang-accordion/images/right-icon.png" open-icon-url="bower_components/ang-accordion/images/down-icon.png")
             collapsible-item(item-title="Shop")
               ng-include(src="'views/templates/store.html'")
             collapsible-item(item-title="Videos")
