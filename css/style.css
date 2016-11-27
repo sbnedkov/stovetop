@@ -126,7 +126,6 @@ body {
 }
 
 .shop-container {
-  height: 250px;
   margin: auto;
 }
 
@@ -142,17 +141,15 @@ body {
   margin: 0;
 }
 
-/*
 @media (min-width: 400px) and (max-width: 768px) {
   .video-container {
       height: 100px;
   }
-
-  .shop-item {
-    height: 160px;
-  }
 }
-*/
+
+.shop-container div {
+  padding: 0;
+}
 
 .recipes-container {
   width: 100%;
@@ -296,7 +293,7 @@ body {
 */
 
 .shop-item {
-  height: 100%;
+  height: 17vw;
   background-color: rgba(255, 218, 170, 0.57);
 }
 
@@ -327,8 +324,8 @@ body {
 .shop-label {
   color: #2B1502;
   background: #FFF;
-  font-size: 18px;
   font-family: lobster;
+  font-size: 1em;
 }
 
 .calculator-ingredients {
