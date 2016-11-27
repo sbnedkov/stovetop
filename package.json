@@ -19,7 +19,6 @@
     "gulp": "^3.9.0",
     "gulp-bower": "0.0.13",
     "gulp-develop-server": "^0.5.2",
-    "hbs": "latest",
     "jade": "^1.11.0",
     "lodash": "latest",
     "vinyl-source-stream": "^1.1.0"
