@@ -1,0 +1,27 @@
+html(ng-app='stovetop')
+  head
+    link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='bower_components/font-awesome/css/font-awesome.min.css')
+    link(rel='stylesheet', href='css/style.css')
+    title Stove Top Brew Shop
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+  body(ng-cloak='', ng-controller='stovetop')
+    .main
+      if !mobile
+        .main-top
+          ng-include(src="'views/templates/titles.html'")
+          ng-include(src="'views/templates/store.html'")
+          ng-include(src="'views/templates/videos.html'")
+        .main-bottom
+          ng-include(src="'views/templates/recipes.html'")
+          ng-include(src="'views/templates/calculator.html'")
+      if mobile
+        | Mobile!
+    script(src='bower_components/angular/angular.js')
+    script(src='bower_components/angular-bootstrap/ui-bootstrap-tpls.js')
+    script(src='bower_components/lodash/lodash.min.js')
+    script(src='src/module.js')
+    script(src='trewbrews-calc-public/src/trewbrews-calc.js')
+    script(src='src/stovetop.js')
+    script(src='src/calculator.js')
+    body
