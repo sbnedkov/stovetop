@@ -2,6 +2,7 @@ html(ng-app='stovetop')
   head
     link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.min.css')
     link(rel='stylesheet', href='bower_components/font-awesome/css/font-awesome.min.css')
+    link(rel='stylesheet', href='bower_components/ang-accordion/css/ang-accordion.css')
     link(rel='stylesheet', href='css/style.css')
     title Stove Top Brew Shop
     meta(name='viewport', content='width=device-width, initial-scale=1')
@@ -16,10 +17,21 @@ html(ng-app='stovetop')
           ng-include(src="'views/templates/recipes.html'")
           ng-include(src="'views/templates/calculator.html'")
       if mobile
-        | Mobile!
+        ng-include(src="'views/templates/titles.html'")
+        ang-accordion
+            collapsible-item(item-title="Shop")
+              ng-include(src="'views/templates/store.html'")
+            collapsible-item(item-title="Videos")
+              ng-include(src="'views/templates/videos.html'")
+            collapsible-item(item-title="Recipes")
+              ng-include(src="'views/templates/recipes.html'")
+            collapsible-item(item-title="Caculator")
+              ng-include(src="'views/templates/calculator.html'")
+
     script(src='bower_components/angular/angular.js')
     script(src='bower_components/angular-bootstrap/ui-bootstrap-tpls.js')
     script(src='bower_components/lodash/lodash.min.js')
+    script(src='bower_components/ang-accordion/js/ang-accordion.js')
     script(src='src/module.js')
     script(src='trewbrews-calc-public/src/trewbrews-calc.js')
     script(src='src/stovetop.js')

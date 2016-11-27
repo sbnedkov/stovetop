@@ -1,1 +1,1 @@
-angular.module('stovetop', ['ui.bootstrap']);
+angular.module('stovetop', ['ui.bootstrap', 'angAccordion']);
